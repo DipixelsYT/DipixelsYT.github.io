@@ -65,7 +65,7 @@ const campos = ['url','nome','de','preco','cupom'];
 function linkAfiliado(bruto){
   const u = bruto.trim();
   if(!u) return {link:'', tipo:''};
-  if(/amzn\.to\//i.test(u)) return {link:u, tipo:'curto'};
+  if(/(^|\/\/|\.)(amzn\.to|link\.amazon|a\.co)\//i.test(u)) return {link:u, tipo:'curto'};
   if(/(^|[\/.])amazon\.com\.br\//i.test(u)){
     const m = u.match(/\/(?:dp|gp\/product|gp\/aw\/d)\/([A-Z0-9]{10})/i);
     if(m) return {link:`https://www.amazon.com.br/dp/${m[1].toUpperCase()}?tag=${TAG}`, tipo:'amazon'};
@@ -91,7 +91,7 @@ function atualizar(){
   const h = $('urlHint');
   h.className = 'hint';
   if(tipo==='amazon'){ h.textContent = 'Tag de afiliado adicionada ✓'; h.classList.add('ok'); }
-  else if(tipo==='curto'){ h.textContent = 'Link amzn.to: só use se ele foi gerado na sua conta (SiteStripe). Na dúvida, cole o link completo da página.'; h.classList.add('warn'); }
+  else if(tipo==='curto'){ h.textContent = 'Link curto da Amazon: vale se foi gerado na sua conta (SiteStripe) ✓'; h.classList.add('ok'); }
   else if(tipo==='outra'){ h.textContent = 'Não é Amazon: confira se é o seu link de afiliado da loja.'; h.classList.add('warn'); }
   else if(tipo==='erro'){ h.textContent = 'Não consegui ler esse link. Confira se copiou inteiro.'; h.classList.add('warn'); }
 
