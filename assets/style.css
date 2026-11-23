@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#070B16;color:#E8EEF9;font-family:Inter,system-ui,sans-serif;line-height:1.65}
+a{color:#7CC2FF}a:hover{color:#B5DCFF}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;color:#fff;letter-spacing:-.02em;line-height:1.15}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:740px}
+header.top{border-bottom:1px solid #1B2A4A;background:#0A1222;position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px}
+.brand img{width:40px;height:40px;border-radius:50%;border:2px solid #F5B82E;object-fit:cover}
+nav.menu{display:flex;gap:4px;flex-wrap:wrap}
+nav.menu a{color:#B7C3DA;text-decoration:none;font-weight:600;font-size:15px;padding:10px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+nav.menu a:hover,nav.menu a[aria-current]{color:#fff;background:#14213D}
+nav.menu a.cta{background:#F5B82E;color:#0A0F1C}
+.hero{padding:56px 0 40px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(59,158,255,.16),rgba(7,11,22,0) 60%)}
+.hero img{width:104px;height:104px;border-radius:50%;border:3px solid #F5B82E;object-fit:cover}
+.hero h1{font-size:clamp(36px,7vw,64px);margin:18px auto 12px;max-width:820px}
+.hero h1 span{color:#F5B82E}
+.hero p{color:#B7C3DA;font-size:18px;max-width:620px;margin:0 auto 26px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none;min-height:48px}
+.btn.gold{background:#F5B82E;color:#0A0F1C}.btn.gold:hover{color:#0A0F1C;filter:brightness(1.06)}
+.btn.ghost{border:1px solid #2A3B5E;color:#E8EEF9}.btn.ghost:hover{color:#fff;background:#111B30}
+section.block{padding:48px 0}
+section.block h2{font-size:clamp(26px,4.5vw,36px);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{background:#0F1626;border:1px solid #22304D;border-radius:18px;padding:22px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px;transition:border-color .15s}
+.card:hover{border-color:#3B9EFF;color:inherit}
+.tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F5B82E}
+.card h3{margin:0;font-size:21px}
+.card p{margin:0;color:#9AA8C2;font-size:15px}
+.card .meta{color:#8391AD;font-size:13px;margin-top:auto}
+.band{background:#0E1A33;border-top:1px solid #1B2A4A;border-bottom:1px solid #1B2A4A}
+.band .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:32px;padding-bottom:32px}
+.band h2{margin:0 0 6px;font-size:26px}.band p{margin:0;color:#B7C3DA}
+article.post{padding:40px 0 24px}
+.crumb{font-size:14px;color:#8391AD}.crumb a{color:#9AA8C2}
+article.post h1{font-size:clamp(30px,6vw,46px);margin:10px 0 8px}
+.post .meta{color:#8391AD;font-size:14px;margin-bottom:28px}
+.post h2{font-size:26px;margin:36px 0 10px}
+.post p,.post li{font-size:17px;color:#D3DCEC}
+.post ul{padding-left:22px}.post li{margin:6px 0}
+.post strong{color:#fff}
+.callout{background:#121C31;border:1px solid #2A3B5E;border-radius:14px;padding:16px 18px;margin:26px 0;font-size:16px;color:#D3DCEC}
+.ctabox{margin:36px 0 8px;background:#F5B82E;color:#0A0F1C;border-radius:18px;padding:22px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ctabox strong{font-family:'Space Grotesk',sans-serif;font-size:21px;display:block}
+.ctabox a{background:#0A0F1C;color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px;min-height:44px;display:inline-flex;align-items:center}
+footer.site{border-top:1px solid #1B2A4A;margin-top:40px;padding:28px 0 40px;color:#8391AD;font-size:14px}
+footer.site .wrap{display:flex;flex-direction:column;gap:8px}
+footer.site nav{display:flex;gap:16px;flex-wrap:wrap}
+footer.site a{color:#9AA8C2}
