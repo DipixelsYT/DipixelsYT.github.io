@@ -30,7 +30,7 @@ button{font:inherit;font-weight:700;border:0;border-radius:12px;padding:12px 18p
 <body>
 <main class="wrap">
 <h1>Gerador de post</h1>
-<p class="sub">Cola o link da Amazon: o link de afiliado e o post do grupo saem prontos.</p>
+<p class="sub">Cola o link da Amazon: o link de afiliado e o post do grupo saem prontos. No WhatsApp, espere a prévia com a foto aparecer antes de enviar.</p>
 
 <label for="url">Link do produto</label>
 <input id="url" type="url" inputmode="url" placeholder="https://www.amazon.com.br/..." autocomplete="off">
@@ -40,9 +40,10 @@ button{font:inherit;font-weight:700;border:0;border-radius:12px;padding:12px 18p
 <input id="nome" type="text" placeholder="Ex.: Monitor LG UltraGear 27&quot; 240Hz IPS 1ms" autocomplete="off">
 
 <div class="row">
-<div><label for="preco">Preço</label><input id="preco" type="text" inputmode="decimal" placeholder="1099,90" autocomplete="off"></div>
-<div><label for="cupom">Cupom (opcional)</label><input id="cupom" type="text" placeholder="CANARINHO" autocomplete="off"></div>
+<div><label for="de">Preço antigo (opcional)</label><input id="de" type="text" inputmode="decimal" placeholder="1299,90" autocomplete="off"></div>
+<div><label for="preco">Preço da oferta</label><input id="preco" type="text" inputmode="decimal" placeholder="1099,90" autocomplete="off"></div>
 </div>
+<label for="cupom">Cupom (opcional)</label><input id="cupom" type="text" placeholder="CANARINHO" autocomplete="off">
 
 <div class="out">
 <label for="post">Post pronto</label>
@@ -59,7 +60,7 @@ button{font:inherit;font-weight:700;border:0;border-radius:12px;padding:12px 18p
 {
 const TAG = 'dipixelsgames-20';
 const $ = id => document.getElementById(id);
-const campos = ['url','nome','preco','cupom'];
+const campos = ['url','nome','de','preco','cupom'];
 
 function linkAfiliado(bruto){
   const u = bruto.trim();
@@ -96,12 +97,14 @@ function atualizar(){
 
   const nome = $('nome').value.trim().toUpperCase();
   const preco = formatarPreco($('preco').value);
+  const de = formatarPreco($('de').value);
   const cupom = $('cupom').value.trim();
   const linhas = [];
   if(nome) linhas.push('🚨 ' + nome, '');
-  if(preco) linhas.push('💵 ' + preco);
-  if(cupom) linhas.push('🎟️ Cupom: ' + cupom);
+  if(preco) linhas.push(de ? `De ~${de}~ Por *${preco}*` : `💵 *${preco}*`);
+  if(cupom) linhas.push('🎟️ Use o cupom: ' + cupom);
   if(link){ if(preco||cupom) linhas.push(''); linhas.push('✅ Link do produto:', link); }
+  if(linhas.length) linhas.push('', 'anúncio');
   $('post').value = linhas.join('\n');
   $('post').dataset.link = link;
 }
