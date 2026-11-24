@@ -14,7 +14,7 @@ body{margin:0;background:#070B16;color:#E8EEF9;font:16px/1.5 Inter,system-ui,san
 .wrap{max-width:560px;margin:0 auto;padding:24px 18px 48px}
 h1{font-family:'Space Grotesk',sans-serif;font-size:28px;margin:0 0 4px;color:#fff}
 .sub{color:#9AA8C2;margin:0 0 18px;font-size:15px}
-.lojas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 6px;padding:0;border:0}
+.lojas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 6px;padding:0;border:0}
 .lojas legend{font-weight:600;font-size:14px;margin-bottom:6px;color:#D3DCEC;padding:0}
 .lojas input{position:absolute;opacity:0;pointer-events:none}
 .lojas label{display:flex;align-items:center;justify-content:center;min-height:48px;margin:0;border-radius:12px;background:#0F1626;border:1px solid #2A3B5E;font-weight:700;font-size:15px;cursor:pointer;color:#B7C3DA;text-align:center;line-height:1.2;padding:4px}
@@ -46,6 +46,7 @@ button{font:inherit;font-weight:700;border:0;border-radius:12px;padding:12px 18p
 <input type="radio" name="loja" id="l-amazon" value="amazon" checked><label for="l-amazon" style="--cor:#F5B82E;--txt:#0A0F1C">Amazon</label>
 <input type="radio" name="loja" id="l-shopee" value="shopee"><label for="l-shopee" style="--cor:#EE4D2D;--txt:#fff">Shopee</label>
 <input type="radio" name="loja" id="l-ml" value="ml"><label for="l-ml" style="--cor:#FFE600;--txt:#2D3277">Mercado Livre</label>
+<input type="radio" name="loja" id="l-kabum" value="kabum"><label for="l-kabum" style="--cor:#FF6500;--txt:#fff">KaBuM!</label>
 </fieldset>
 <div id="dica" class="dica"></div>
 
@@ -99,6 +100,10 @@ const LOJAS = {
     placeholder: 'https://s.shopee.com.br/...',
     dica: '<b>Shopee:</b> gere o link no app ou no painel <b>Shopee Afiliados</b> (opção "Obter link") e cole aqui. O link normal da página não paga comissão.'
   },
+  kabum: {
+    placeholder: 'https://tidd.ly/... ou https://www.awin1.com/cread.php?...',
+    dica: '<b>KaBuM!:</b> gere o link na Awin (<b>Link Builder</b> ou app/extensão MyAwin) com o anunciante <b>Kabum BR</b> e cole aqui. Lembre: a comissão só conta se a compra for em até <b>24h</b> depois do clique.'
+  },
   ml: {
     placeholder: 'https://mercadolivre.com/sec/...',
     dica: '<b>Mercado Livre:</b> gere o link no painel do <b>Programa de Afiliados</b> do Mercado Livre e cole aqui. O link normal da página não paga comissão.'
@@ -111,6 +116,7 @@ function detectarLoja(u){
   if(/(amazon\.com\.br|amzn\.to|link\.amazon|(^|\/\/)a\.co\/)/i.test(u)) return 'amazon';
   if(/(shopee\.com\.br|shope\.ee)/i.test(u)) return 'shopee';
   if(/(mercadolivre\.com|mercadolibre\.com|meli\.la)/i.test(u)) return 'ml';
+  if(/(kabum\.com\.br|tidd\.ly|awin1\.com)/i.test(u)) return 'kabum';
   return null;
 }
 
@@ -132,6 +138,11 @@ function analisarLink(bruto, loja){
     if(/(s\.shopee\.com\.br|shope\.ee)\//i.test(u)) return {link:u, msg:'Link curto de afiliado da Shopee ✓', cls:'ok'};
     if(/shopee\.com\.br/i.test(u)) return {link:u, msg:'Esse parece o link normal da página. Gere o seu no Shopee Afiliados pra ganhar comissão.', cls:'warn'};
     return {link:u, msg:'Esse link não parece da Shopee.', cls:'warn'};
+  }
+  if(loja === 'kabum'){
+    if(/(tidd\.ly\/|awin1\.com\/cread\.php)/i.test(u)) return {link:u, msg:'Link de afiliado da Awin (KaBuM) ✓', cls:'ok'};
+    if(/kabum\.com\.br/i.test(u)) return {link:u, msg:'Esse é o link normal da KaBuM. Gere o seu na Awin (Link Builder / MyAwin) pra ganhar comissão.', cls:'warn'};
+    return {link:u, msg:'Esse link não parece da KaBuM / Awin.', cls:'warn'};
   }
   if(loja === 'ml'){
     if(/(mercadolivre\.com\/sec\/|meli\.la\/)/i.test(u)) return {link:u, msg:'Link de afiliado do Mercado Livre ✓', cls:'ok'};
