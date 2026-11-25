@@ -25,7 +25,12 @@ nav.menu a.cta{background:#F5B82E;color:#0A0F1C}
 section.block{padding:48px 0}
 section.block h2{font-size:clamp(26px,4.5vw,36px);margin:0 0 20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
-.card{background:#0F1626;border:1px solid #22304D;border-radius:18px;padding:22px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px;transition:border-color .15s}
+.card{background:#0F1626;border:1px solid #22304D;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
+.card:hover{transform:translateY(-2px)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;background:#0A1222}
+.card .txt{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.capa{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:16px;border:1px solid #22304D;margin:8px 0 22px}
+@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
 .card:hover{border-color:#3B9EFF;color:inherit}
 .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F5B82E}
 .card h3{margin:0;font-size:21px}
