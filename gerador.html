@@ -101,8 +101,8 @@ const LOJAS = {
     dica: '<b>Shopee:</b> gere o link no app ou no painel <b>Shopee Afiliados</b> (opção "Obter link") e cole aqui. O link normal da página não paga comissão.'
   },
   kabum: {
-    placeholder: 'https://tidd.ly/... ou https://www.awin1.com/cread.php?...',
-    dica: '<b>KaBuM!:</b> gere o link na Awin (<b>Link Builder</b> ou app/extensão MyAwin) com o anunciante <b>Kabum BR</b> e cole aqui. Lembre: a comissão só conta se a compra for em até <b>24h</b> depois do clique.'
+    placeholder: 'https://www.kabum.com.br/produto/... (converto pro seu link)',
+    dica: '<b>KaBuM!:</b> cole o link normal do produto que eu transformo no seu link de afiliado da Awin. Links tidd.ly gerados na Awin também valem. Lembre: a comissão só conta se a compra for em até <b>24h</b> depois do clique.'
   },
   ml: {
     placeholder: 'https://mercadolivre.com/sec/...',
@@ -141,7 +141,13 @@ function analisarLink(bruto, loja){
   }
   if(loja === 'kabum'){
     if(/(tidd\.ly\/|awin1\.com\/cread\.php)/i.test(u)) return {link:u, msg:'Link de afiliado da Awin (KaBuM) ✓', cls:'ok'};
-    if(/kabum\.com\.br/i.test(u)) return {link:u, msg:'Esse é o link normal da KaBuM. Gere o seu na Awin (Link Builder / MyAwin) pra ganhar comissão.', cls:'warn'};
+    if(/kabum\.com\.br/i.test(u)){
+      try{
+        const x = new URL(u); x.search = ''; x.hash = '';
+        const link = 'https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3165278&ued=' + encodeURIComponent(x.toString());
+        return {link, msg:'Link da KaBuM convertido pro seu link de afiliado (Awin) ✓', cls:'ok'};
+      }catch(e){ return {link:u, msg:'Não consegui ler esse link. Confira se copiou inteiro.', cls:'warn'}; }
+    }
     return {link:u, msg:'Esse link não parece da KaBuM / Awin.', cls:'warn'};
   }
   if(loja === 'ml'){
