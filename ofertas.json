@@ -1,6 +1,69 @@
 {
- "atualizado": "2026-11-25T14:37-03:00",
+ "atualizado": "2026-11-25T21:00-03:00",
  "ofertas": [
+  {
+   "nome": "Monitor Gamer TCL 27\" DLED, Full HD, Até 300Hz, 0.5ms, IPS, HDR 400, HDMI e DP, Branco - 27P1AD",
+   "preco": 1084.99,
+   "antes": 1199.99,
+   "link": "https://www.awin1.com/pclick.php?p=46753159270&a=3165278&m=17729",
+   "imagem": "http://images8.kabum.com.br/produtos/fotos/1078218/monitor-gamer-tcl-27p1ad-27-full-hd-280hz-0-5ms-ips-hdr-400-hdmi-e-dp-preto-27p1ad_1794489722_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Monitor Gamer AOC 24.5\", Full HD, 310Hz, 0.3ms, Fast IPS, G-Sync, HDR 400, Altura Ajustável, Preto - 25G4S/P",
+   "preco": 989.99,
+   "antes": 1099.99,
+   "link": "https://www.awin1.com/pclick.php?p=42725183160&a=3165278&m=17729",
+   "imagem": "http://images4.kabum.com.br/produtos/fotos/909134/monitor-gamer-aoc-24-5-fhd-310hz-0-3ms-fast-ips-g-sync-hdr-400-altura-ajustavel-preto-25g4s-p_1759349497_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Monitor Gamer ASUS ROG Strix com Mode Triple, 27\", (4k 240HZ, QHD 400HZ Ou FHD 488HZ), 1ms, HDR10, G-Sync, USB-C, Preto ",
+   "preco": 3259.99,
+   "antes": 3699.99,
+   "link": "https://www.awin1.com/pclick.php?p=46518397489&a=3165278&m=17729",
+   "imagem": "http://images8.kabum.com.br/produtos/fotos/1017208/monitor-gamer-asus-rog-strix-27-dual-mode-4k-240hz-fhd-480hz-0-3ms-fast-ips-freesync-hdr-altura-ajustavel-preto-xg27ucmg_1793363562_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Monitor Gamer Curvo TCL QD Mini LED 34\", WQHD, Ultrawide, 180Hz, 1ms, HDR 1400, USB-C, FreeSync Premium, Altura Ajustáve",
+   "preco": 3459.99,
+   "antes": 3999.99,
+   "link": "https://www.awin1.com/pclick.php?p=43130512012&a=3165278&m=17729",
+   "imagem": "http://images9.kabum.com.br/produtos/fotos/929599/monitor-gamer-curvo-tcl-qd-mini-led-34-wqhd-ultrawide-180hz-1ms-hdr-1400-usb-c-freesync-premium-altura-ajustavel-som-integrado-34r83q_1777313666_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Headset Gamer Razer BlackShark V2 X, para PlayStation, com Fio, Quartz - RZ04-03241400-R3UA",
+   "preco": 379.99,
+   "antes": 499.99,
+   "link": "https://www.awin1.com/pclick.php?p=43582224235&a=3165278&m=17729",
+   "imagem": "http://images3.kabum.com.br/produtos/fotos/921153/headset-gamer-razer-blackshark-v2-x-para-playstation-com-fio-quartz-rz04-03241400-r3ua_1765457422_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Monitor Gamer Gigabyte QD-OLED 27\", QHD, 240Hz, 0.03ms, IA, G-Sync, FreeSync, HDR 10, USB-C, Altura Ajustável, Preto - G",
+   "preco": 2599.99,
+   "antes": 3499.99,
+   "link": "https://www.awin1.com/pclick.php?p=46781608174&a=3165278&m=17729",
+   "imagem": "http://images5.kabum.com.br/produtos/fotos/994955/monitor-gamer-gigabyte-qd-oled-27-qhd-240hz-0-03ms-ia-g-sync-freesync-hdr-10-usb-c-altura-ajustavel-preto-go27q24_1785758748_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
+  {
+   "nome": "Headset Gamer Redragon Arrow, RGB, Som Surround 7.1, Driver 53mm, USB, Preto - H858",
+   "preco": 339.99,
+   "antes": 499.99,
+   "link": "https://www.awin1.com/pclick.php?p=46848824683&a=3165278&m=17729",
+   "imagem": "http://images6.kabum.com.br/produtos/fotos/998206/headset-gamer-arrow-preto-h858_1779803260_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-25T21:00-03:00"
+  },
   {
    "nome": "Placa de Vídeo Gigabyte RTX 5070 Ti EAGLE OC SFF 16G NVIDIA GeForce, 16GB GDDR7, 256bits, RGB, DLSS, Ray Tracing - 9VN50",
    "preco": 9599.99,
