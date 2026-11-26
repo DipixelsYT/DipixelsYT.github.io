@@ -1,6 +1,51 @@
 {
- "atualizado": "2026-11-25T21:00-03:00",
+ "atualizado": "2026-11-26T03:30-03:00",
  "ofertas": [
+  {
+   "nome": "Placa de Vídeo Inno3D RTX 5070 Twin X2 OC NVIDIA GeForce, 12GB, GDDR7, 2542MHz, Blackwell, Ray Tracing, DLSS 4 - N50702-",
+   "preco": 6299.99,
+   "antes": 6999.99,
+   "link": "https://www.awin1.com/pclick.php?p=46674386390&a=3165278&m=17729",
+   "imagem": "http://images2.kabum.com.br/produtos/fotos/717772/placa-de-video-inno3d-geforce-rtx-5070-twin-x2-oc-n50702-12d7x-195064n_1740575325_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-26T03:30-03:00"
+  },
+  {
+   "nome": "Mouse Gamer Force One Supernova, RGB, 20.000 DPI, Switches Huano, Sensor Optico, Branco - FR.MO.SP.01",
+   "preco": 79.99,
+   "antes": 119.9,
+   "link": "https://www.awin1.com/pclick.php?p=39607771159&a=3165278&m=17729",
+   "imagem": "http://images2.kabum.com.br/produtos/fotos/677442/mouse-gamer-force-one-supernova-rgb-20-000-dpi-switches-huano-sensor-optico-branco-fr-mo-sp-01_1732803760_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-26T03:30-03:00"
+  },
+  {
+   "nome": "Mouse Gamer Sem Fio Corsair Sabre V2 Pro, RGB, 33000 DPI, 5 Botões, Wireless, Branco - CH-931G001-WW",
+   "preco": 579.99,
+   "antes": 999.99,
+   "link": "https://www.awin1.com/pclick.php?p=44213998244&a=3165278&m=17729",
+   "imagem": "http://images0.kabum.com.br/produtos/fotos/985210/mouse-gamer-sem-fio-corsair-sabre-v2-pro-rgb-33000-dpi-5-botoes-wireless-bluetooth-branco-ch-931g001-ww_1773427306_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-26T03:30-03:00"
+  },
+  {
+   "nome": "Mouse Gamer Razer Cobra, Chroma RGB, 8500 DPI, Pokémon Kanto Starters Edition - RZ01-04650400-R3M1",
+   "preco": 339.99,
+   "antes": 699.99,
+   "link": "https://www.awin1.com/pclick.php?p=43294094069&a=3165278&m=17729",
+   "imagem": "http://images8.kabum.com.br/produtos/fotos/921188/mouse-gamer-razer-cobra-chroma-rgb-8500-dpi-pokemon-kanto-starters-edition-rz01-04650400-r3m1_1764111535_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-26T03:30-03:00"
+  },
+  {
+   "nome": "Mouse Gamer Redragon Vampire M720, RGB, 8 Botões, 10000DPI - M720-RGB",
+   "preco": 89.99,
+   "antes": 219.99,
+   "link": "https://www.awin1.com/pclick.php?p=41688026523&a=3165278&m=17729",
+   "imagem": "http://images9.kabum.com.br/produtos/fotos/129749/mouse-gamer-redragon-vampire-m720-rgb-8-botoes-10000dpi-m720-rgb_1603214633_g.jpg",
+   "loja": "KaBuM!",
+   "quando": "2026-11-26T03:30-03:00"
+  },
   {
    "nome": "Monitor Gamer TCL 27\" DLED, Full HD, Até 300Hz, 0.5ms, IPS, HDR 400, HDMI e DP, Branco - 27P1AD",
    "preco": 1084.99,
@@ -133,15 +178,6 @@
    "antes": 659.99,
    "link": "https://www.awin1.com/pclick.php?p=44410812409&a=3165278&m=17729",
    "imagem": "http://images3.kabum.com.br/produtos/fotos/476953/mouse-gamer-razer-deathadder-v3-30000-dpi-ultra-leve-6-botoes-com-fio-8k-hz-preto-rz0104640100r3m_1785509873_g.jpg",
-   "loja": "KaBuM!",
-   "quando": "2026-11-25T14:37-03:00"
-  },
-  {
-   "nome": "Mouse Gamer Razer Cobra, Chroma RGB, 8500 DPI, Pokémon Kanto Starters Edition - RZ01-04650400-R3M1",
-   "preco": 339.99,
-   "antes": 699.99,
-   "link": "https://www.awin1.com/pclick.php?p=43294094069&a=3165278&m=17729",
-   "imagem": "http://images8.kabum.com.br/produtos/fotos/921188/mouse-gamer-razer-cobra-chroma-rgb-8500-dpi-pokemon-kanto-starters-edition-rz01-04650400-r3m1_1764111535_g.jpg",
    "loja": "KaBuM!",
    "quando": "2026-11-25T14:37-03:00"
   },
